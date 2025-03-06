@@ -3,27 +3,24 @@ package:
   version: 1.0.0
 
 source:
-  git_rev: 1.0.0
-  git_url: https://github.com/IsGlak/caastools-in-conda/archive/refs/heads/main.zip
-
+#  git_rev: 1.0.0
+#  git_url: https://github.com/IsGlak/caastools-in-conda/archive/refs/heads/main.zip
+  path: ../
 requirements:
   build:
     - python
-    - biopython
-    - dendropy
-    - scipy
-    - itertools
+    - r-base
 
   run:
     - python
+    - r-base
     - biopython
-    - dendropy
+    - bioconda::dendropy
     - scipy
-    - itertools
 
 test:
   imports:
-    - caastools
-
+#    - caastools
+  
 about:
   home: https://github.com/IsGlak/caastools-in-conda
