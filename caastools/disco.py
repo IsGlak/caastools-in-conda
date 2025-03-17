@@ -24,9 +24,9 @@ CALLED BY: CT.
 '''
 
 
-from modules.caas_id import *
-from modules.alimport import *
-from modules.pindex import *
+from caastools.caas_id import *
+from caastools.alimport import *
+from caastools.pindex import *
 import os
 from os.path import exists
 

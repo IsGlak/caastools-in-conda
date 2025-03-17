@@ -5,11 +5,17 @@ package:
 source:
 #  git_rev: 1.0.0
 #  git_url: https://github.com/IsGlak/caastools-in-conda/archive/refs/heads/main.zip
-  path: ../
+  path: .
+
+build:
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+
 requirements:
   build:
     - python
     - r-base
+    - setuptools
 
   run:
     - python
@@ -20,7 +26,8 @@ requirements:
 
 test:
   imports:
-#    - caastools
+    - caastools.boot
+    
   
 about:
   home: https://github.com/IsGlak/caastools-in-conda

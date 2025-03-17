@@ -34,9 +34,9 @@ check_pattern()            checks the pattern
 fetch_caas()                fetches caas per each thing
 '''                                                       
 
-from modules.pindex import *
-from modules.alimport import *
-from modules.hyper import *
+from caastools.pindex import *
+from caastools.alimport import *
+from caastools.hyper import *
 from os.path import exists
 
 # Function process_position()

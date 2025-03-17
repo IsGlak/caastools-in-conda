@@ -25,10 +25,10 @@ CALLED BY: ct
 '''
 
 
-from modules.init_bootstrap import *
-from modules.disco import process_position
-from modules.caas_id import iscaas
-from modules.alimport import *
+from caastools.init_bootstrap import *
+from caastools.disco import process_position
+from caastools.caas_id import iscaas
+from caastools.alimport import *
 
 from os.path import exists
 import functools

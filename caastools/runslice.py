@@ -20,7 +20,7 @@ MODULE NAME:    runslice.py
 DESCRIPTION:    The slicer function.
 DEPENDENCIES:   TBD
 '''
-from modules.alimport import *
+from caastools.alimport import *
 
 ### Function runslice (collects the )
 def runslice(options_object):

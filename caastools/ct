@@ -59,7 +59,7 @@ bootstrap       Runs CAAS bootstrap analysis on a on a single MSA.
 
 import sys                                          # for tool selection and more
 from optparse import OptionParser                   # for single option parser
-from modules.deps import check_dependencies         # 
+from deps import check_dependencies         # 
 from os.path import exists
 
 
@@ -205,8 +205,8 @@ if tool.lower() == "discovery":
 
     ### 1.8 Import the modules
 
-    from modules.disco import *
-    from modules.runslice import runslice
+    from disco import *
+    from runslice import runslice
 
     ### 1.9 PROCEDURE Step 1- Slice the alignment
 
@@ -397,7 +397,7 @@ if tool.lower() == "resample":
 
     ### 3 Import the bootstrap initialisation
 
-    from modules.init_bootstrap import *
+    from init_bootstrap import *
 
     normalised_mode = options.bootstrap_mode
 
@@ -566,9 +566,9 @@ if tool.lower() == "bootstrap":
 
     ### 3.8 Import the modules
 
-    from modules.boot import *
-    from modules.init_bootstrap import simtrait_revive
-    from modules.runslice import runslice
+    from caastools.boot import *
+    from caastools.init_bootstrap import simtrait_revive
+    from caastools.runslice import runslice
 
     ### 3.9 PROCEDURE 
 
