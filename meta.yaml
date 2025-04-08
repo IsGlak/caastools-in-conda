@@ -3,8 +3,6 @@ package:
   version: 1.0.0
 
 source:
-#  git_rev: 1.0.0
-#  git_url: https://github.com/IsGlak/caastools-in-conda/archive/refs/heads/main.zip
   path: .
 
 build:
@@ -14,15 +12,19 @@ build:
 requirements:
   build:
     - python
-    - r-base
+    - r-base=>3.6
     - setuptools
 
   run:
     - python
-    - r-base
-    - biopython
-    - bioconda::dendropy
-    - scipy
+    - r-base=>3.6
+    - biopython=1.79
+    - bioconda::dendropy=5.0.1
+    - scipy=1.14.0
+    - r-devtools=2.4.5
+    - r-ape=5.8
+    - r-tibble=3.2.1
+    - r-readr=2.1.5
 
 test:
   imports:
